@@ -1,5 +1,17 @@
 @import './variables.css';
 
+/* Keep the learning workspace usable with an editor beside it or on a phone. */
+.app-sidebar { flex-shrink: 0; }
+.app-main { min-width: 0; }
+.sidebar-section-title { font-size: .7rem; text-transform: uppercase; color: #5b6982; font-weight: 700; letter-spacing: .05em; padding-left: 8px; }
+.learning-nav-link { background: #edf2ff; color: #3159b4 !important; font-weight: 700 !important; }
+.skip-link { position: fixed; left: 16px; top: -80px; z-index: 1000; padding: 12px 18px; border-radius: 8px; background: #fff; color: #234da0; box-shadow: 0 3px 15px #0003; }
+.skip-link:focus { top: 12px; }
+.learning-dashboard-banner { display: flex; justify-content: space-between; align-items: center; gap: 24px; border: 1px solid #d7e2ff; border-radius: 14px; padding: 22px 26px; background: linear-gradient(110deg, #edf2ff, #f6f9ff); }
+.learning-dashboard-banner h3 { font-size: 1.08rem; margin-bottom: 6px; }.learning-dashboard-banner p { margin: 0; font-size: .86rem; color: #53647e; }.learning-dashboard-banner a { flex-shrink: 0; }
+@media (max-width: 1000px) { .app-header { flex-wrap: wrap; gap: 12px; }.app-main { padding: 24px !important; }.app-sidebar { width: 205px !important; padding: 20px 10px !important; gap: 24px !important; }.app-main { max-width: calc(100% - 205px) !important; }.app-role-switcher { max-width: 100%; }.app-role-switcher select { max-width: 220px; } }
+@media (max-width: 700px) { .app-header { position: static !important; padding: 14px 16px !important; }.app-role-switcher { width: 100%; justify-content: space-between; gap: 6px !important; }.app-role-switcher select { max-width: 175px; }.app-workspace { flex-direction: column; }.app-sidebar { width: 100% !important; padding: 14px 16px !important; border-right: 0 !important; border-bottom: 1px solid #dce3ef; gap: 14px !important; }.app-sidebar nav { flex-direction: row !important; flex-wrap: wrap; }.app-sidebar .sidebar-link { font-size: .75rem; padding: 6px 8px; }.app-sidebar > div:last-child { display: none; }.app-main { padding: 22px 16px !important; max-width: 100% !important; }.learning-dashboard-banner { flex-direction: column; align-items: flex-start; padding: 20px; } }
+
 /* Base Reset & Document Box Sizing */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -291,3 +303,7 @@ table.data-table tbody tr:last-child td {
   font-size: 0.85rem;
   color: var(--color-text-muted);
 }
+.practice-navigation { min-width: 0; }
+.practice-navigation > summary { cursor: pointer; font-size: .85rem; font-weight: 600; color: var(--color-primary); padding: 8px; }
+.practice-navigation > p { font-size: .75rem; color: var(--color-text-muted); line-height: 1.5; margin: 8px; }
+.practice-navigation > div { margin-top: 18px; }

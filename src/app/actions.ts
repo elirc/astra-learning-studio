@@ -33,6 +33,7 @@ import {
 export async function switchUserAction(userId: string) {
   cookies().set('mock_user_id', userId, { path: '/' });
   revalidatePath('/');
+  revalidatePath('/lab');
 }
 
 /**
@@ -43,6 +44,7 @@ export async function retryJobAction(jobId: string) {
   revalidatePath('/jobs');
   revalidatePath('/jobs/' + jobId);
   revalidatePath('/');
+  revalidatePath('/lab');
   return result;
 }
 
@@ -54,6 +56,7 @@ export async function requeueJobAction(jobId: string) {
   const result = await requeueJob(jobId, session.id);
   revalidatePath('/jobs');
   revalidatePath('/');
+  revalidatePath('/lab');
   return result;
 }
 
@@ -68,6 +71,7 @@ export async function processQueueAction() {
   const summary = await processQueue();
   revalidatePath('/jobs');
   revalidatePath('/');
+  revalidatePath('/lab');
   revalidatePath('/students');
   revalidatePath('/sections');
   return summary;
@@ -162,6 +166,7 @@ export async function markNotificationReadAction(notificationId: string) {
 
   revalidatePath('/notifications');
   revalidatePath('/');
+  revalidatePath('/lab');
 }
 
 export async function markAllNotificationsReadAction() {
@@ -174,6 +179,7 @@ export async function markAllNotificationsReadAction() {
 
   revalidatePath('/notifications');
   revalidatePath('/');
+  revalidatePath('/lab');
   return { marked: result.count };
 }
 
@@ -189,6 +195,7 @@ export async function runAgentAction(params: {
   const input = parseInput(runAgentInput, params);
   const runId = await executeAgentRun(input);
   revalidatePath('/');
+  revalidatePath('/lab');
   revalidatePath('/agent-runs');
   revalidatePath('/agent-runs/' + runId);
   return runId;

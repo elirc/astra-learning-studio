@@ -6,8 +6,8 @@ import SwitcherLink from './components/SwitcherLink';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'EduOps Portal - Agentic Education Operations & LMS',
-  description: 'Enterprise modular monolith learning laboratory and educational operations cockpit.',
+  title: 'Astra Learning Studio — Software Engineering Practice',
+  description: 'Build from your first function to independent feature ownership and senior engineering judgment through guided practice.',
 };
 
 export default async function RootLayout({
@@ -37,7 +37,8 @@ export default async function RootLayout({
       <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         
         {/* TOP COCKPIT HEADER */}
-        <header style={{
+        <a href="#main-content" className="skip-link">Skip to content</a>
+        <header className="app-header" style={{
           backgroundColor: '#ffffff',
           borderBottom: '1px solid var(--color-border-light)',
           padding: '12px 24px',
@@ -58,9 +59,9 @@ export default async function RootLayout({
                 margin: 0,
                 color: 'var(--color-primary)',
                 fontWeight: 700
-              }}>EduOps Platform</h1>
+              }}><Link href="/learn">Astra Learning Studio</Link></h1>
               <span style={{ fontSize: '0.7rem', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                Modular Monolith SWE Laboratory
+                Your path from beginner to independent engineer
               </span>
             </div>
           </div>
@@ -89,7 +90,7 @@ export default async function RootLayout({
           </div>
 
           {/* DEVELOPER SWITCHER CONTROL */}
-          <div style={{
+          <div className="app-role-switcher" style={{
             display: 'flex',
             alignItems: 'center',
             gap: '12px',
@@ -117,17 +118,17 @@ export default async function RootLayout({
             
             {/* Interactive Switcher using Client Subcomponent */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-              <span style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>Act As:</span>
+              <span style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>Lab role:</span>
               <SwitcherLink currentUserId={activeUser.id} users={allUsers.map(u => ({ id: u.id, name: u.name, role: u.role }))} />
             </div>
           </div>
         </header>
 
         {/* WORKSPACE SIDEBAR + PAGE SHELL */}
-        <div style={{ display: 'flex', flex: 1 }}>
+        <div className="app-workspace" style={{ display: 'flex', flex: 1 }}>
           
           {/* SIDEBAR NAVIGATION */}
-          <aside style={{
+          <aside className="app-sidebar" style={{
             width: '240px',
             backgroundColor: '#ffffff',
             borderRight: '1px solid var(--color-border-light)',
@@ -138,12 +139,25 @@ export default async function RootLayout({
           }}>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <span className="sidebar-section-title">Your Engineering Growth</span>
+              <nav aria-label="Engineering learning" style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <Link href="/learn" className="sidebar-link learning-nav-link">↗ Learning Studio</Link>
+                <Link href="/learn/docs/beginner-start" className="sidebar-link">Start from scratch</Link>
+                <Link href="/learn/docs/worked-examples" className="sidebar-link">Worked examples</Link>
+                <Link href="/learn/docs" className="sidebar-link">Engineering Handbook</Link>
+              </nav>
+            </div>
+
+            <details className="practice-navigation">
+              <summary>Explore the practice lab</summary>
+              <p>Use these workflows when a mission asks you to trace, change, or debug the sample application.</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <span style={{ fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--color-text-light)', fontWeight: 700, letterSpacing: '0.05em', paddingLeft: '8px' }}>
-                Academic Operations
+                Practice Lab · Sample Application
               </span>
               
               <nav style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <Link href="/" className="sidebar-link">📊 Dashboard</Link>
+                <Link href="/lab" className="sidebar-link">📊 Lab Dashboard</Link>
                 <Link href="/teachers" className="sidebar-link">👨‍🏫 Teacher Management</Link>
                 <Link href="/students" className="sidebar-link">👨‍Grad Students</Link>
                 <Link href="/courses" className="sidebar-link">📚 Course Catalog</Link>
@@ -155,7 +169,7 @@ export default async function RootLayout({
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <span style={{ fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--color-text-light)', fontWeight: 700, letterSpacing: '0.05em', paddingLeft: '8px' }}>
-                Observability Cockpit
+                Practice Lab · Debug & Investigate
               </span>
               
               <nav style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
@@ -167,6 +181,7 @@ export default async function RootLayout({
                 <Link href="/permissions" className="sidebar-link">🛡️ Permission Matrix</Link>
               </nav>
             </div>
+            </details>
 
             <div style={{
               marginTop: 'auto',
@@ -179,13 +194,13 @@ export default async function RootLayout({
                 Mentor Tip 💡
               </span>
               <p style={{ fontSize: '0.7rem', color: 'var(--color-text-main)', margin: 0, lineHeight: 1.4 }}>
-                Switch active users in the header to instantly trigger different RBAC permissions on pages.
+                Predict what a function does, run a small example, then explain any difference. Use the lab role switcher when practicing access rules.
               </p>
             </div>
           </aside>
 
           {/* PAGE CONTENT CONTAINER */}
-          <main style={{ flex: 1, padding: '32px 40px', overflowY: 'auto', maxWidth: 'calc(100% - 240px)' }}>
+          <main id="main-content" className="app-main" style={{ flex: 1, padding: '32px 40px', overflowY: 'auto', maxWidth: 'calc(100% - 240px)' }}>
             {children}
           </main>
         </div>

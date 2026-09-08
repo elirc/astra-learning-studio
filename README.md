@@ -1,6 +1,6 @@
-# 🎓 EduOps Platform
+# Astra Learning Studio
 
-A school operations cockpit built as a **software engineering training laboratory**.
+A **software engineering practice app** for progressing from your first function to independent feature ownership and senior engineering judgment. The home page opens the Learning Studio; the EduOps sample application at `/lab` supplies real code and workflows to investigate.
 
 Students, teachers, courses, sections, enrollments, assignments, grades, attendance and
 counselling interventions — wrapped in a production-shaped observability layer (structured
@@ -44,9 +44,11 @@ npm run db:seed      # populates the demo scenario
 npm run dev          # http://localhost:3000
 ```
 
-All four steps are required on a fresh clone. `prisma/dev.db` is **not** in the repository
-— it is a generated artefact, and `db:push` + `db:seed` rebuild it deterministically in
-about two seconds. (It used to be committed. See
+Use these setup steps only for a fresh local demo. **`db:seed` resets existing data**; skip it when continuing with a database you want to keep. In Windows PowerShell, use `npm.cmd` if the `npm` shim is blocked.
+
+`prisma/dev.db` is **not** in the repository
+— it is a generated artefact. `db:push` and `db:seed` create a repeatable local demo from
+the schema and seed. (It used to be committed. See
 [`fabledocs/04-what-changed.md`](fabledocs/04-what-changed.md) for why that was a mistake.)
 
 There is no login. Use the **role switcher in the top-right header** to become an Admin, a
@@ -161,11 +163,22 @@ see all of it, and compare it against a previous run to see what changed and why
 
 ## Suggested learning path
 
-1. Read `fabledocs/01-how-this-app-works.md` end to end.
-2. Run the app. Click every page as three different roles.
-3. Read `fabledocs/02-codebase-gotchas.md`.
-4. Read `CONTRIBUTING.md`.
-5. Pick a story from `fabledocs/03-user-stories.md`, then read the commits and the pull
-   request that delivered it. Compare your plan to what actually happened.
-6. `git log -p --follow src/packages/domain/rules/enrollment.ts` — read one file's entire
-   life story. That progression is what real software looks like.
+**[Astra Learning Studio](http://localhost:3000/learn)** turns this repository into
+an active beginner → foundation → mid-level → senior engineering curriculum. Work through 24 missions,
+read the linked source in the browser, save your checkpoint attempt before revealing explanations, and keep personal
+notes and evidence against each mission's review rubric. Your notebook stays in this
+browser, independently of the demo role switcher; export Markdown for review or JSON for
+backup and transfer. Completed lessons return for retrieval practice after seven days. Completion records your evidence and self-review; it does not establish a job level.
+
+Start with the [new engineering handbook](astra%20docs/README.md) or open
+[/learn/docs](http://localhost:3000/learn/docs) in the app. Its eleven guides include a beginner ramp,
+worked examples, deliberate practice, an adaptable roadmap, engineering notes, practice labs,
+system design, operations, career evidence, and reusable templates.
+The [upskilling review report](astra%20docs/upskilling-review.md) records the latest improvements and validation.
+
+1. Start with [your first small change](astra%20docs/beginner-start.md) and the Beginner missions if functions, the terminal, or tests are unfamiliar.
+2. Use [worked examples](astra%20docs/worked-examples.md): predict a result, run it, change one thing, and explain the difference.
+3. Complete a focused Foundation change with a test and a reviewer handoff.
+4. Use the Mid-level missions to own a feature across validation, permissions, persistence, and failure recovery.
+5. Use the Senior missions to practice design decisions, migrations, incidents, and review with another engineer.
+6. Return to completed work without hints, record gaps, and apply feedback to a new variation. Use [deliberate practice](astra%20docs/deliberate-practice.md) for stage exit exercises.

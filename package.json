@@ -11,6 +11,7 @@
     "db:seed": "tsx prisma/seed.ts",
     "db:studio": "prisma studio",
     "test": "node --import tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
     "lint": "next lint"
   },
   "keywords": [],

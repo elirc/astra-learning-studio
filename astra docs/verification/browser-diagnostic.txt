@@ -1,0 +1,578 @@
+node : 2026-09-08T03:08:10.702Z pw:api => browserType.launch started
+At line:2 char:192
++ ... = 'pw:api'; node tests/learning.browser.mjs *> 'astra docs/verificati ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-09-08T03:0....launch started:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+2026-09-08T03:08:13.637Z pw:api <= browserType.launch succeeded
+2026-09-08T03:08:13.642Z pw:api => browser.newContext started
+2026-09-08T03:08:13.903Z pw:api <= browser.newContext succeeded
+2026-09-08T03:08:13.905Z pw:api => browserContext.newPage started
+2026-09-08T03:08:17.321Z pw:api <= browserContext.newPage succeeded
+2026-09-08T03:08:17.324Z pw:api => page.goto started
+2026-09-08T03:08:17.328Z pw:api navigating to "http://127.0.0.1:3100/learn?mission=trace-a-request", waiting until
+"domcontentloaded"
+2026-09-08T03:08:18.014Z pw:api   "commit" event fired
+2026-09-08T03:08:18.016Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:20.496Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:20.502Z pw:api <= page.goto succeeded
+2026-09-08T03:08:20.506Z pw:api => locator.waitFor started
+2026-09-08T03:08:20.535Z pw:api waiting for getByLabel('Personal notes & checkpoint answers') to be visible
+2026-09-08T03:08:20.910Z pw:api   "load" event fired
+2026-09-08T03:08:21.425Z pw:api   "networkidle" event fired
+2026-09-08T03:08:22.042Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:22.418Z pw:api   locator resolved to visible <textarea rows="7" maxlength="50000"
+id="notes-trace-a-request" class="ls-input ls-textarea" placeholder="I expected… I found… The tradeoff I made
+was…"></textarea>
+2026-09-08T03:08:22.421Z pw:api <= locator.waitFor succeeded
+2026-09-08T03:08:22.424Z pw:api => page.waitForFunction started
+2026-09-08T03:08:22.817Z pw:api <= page.waitForFunction succeeded
+2026-09-08T03:08:22.819Z pw:api => locator.count started
+2026-09-08T03:08:22.886Z pw:api <= locator.count succeeded
+2026-09-08T03:08:22.889Z pw:api => locator.isDisabled started
+2026-09-08T03:08:22.894Z pw:api waiting for getByRole('button', { name: 'Complete mission', exact: true })
+2026-09-08T03:08:23.127Z pw:api   locator resolved to <button disabled class="ls-button ls-button-primary">Complete
+mission</button>
+2026-09-08T03:08:23.128Z pw:api <= locator.isDisabled succeeded
+2026-09-08T03:08:23.132Z pw:api => locator.fill started
+2026-09-08T03:08:23.137Z pw:api waiting for getByLabel('Personal notes & checkpoint answers')
+2026-09-08T03:08:23.211Z pw:api   locator resolved to <textarea rows="7" maxlength="50000" id="notes-trace-a-request"
+class="ls-input ls-textarea" placeholder="I expected… I found… The tradeoff I made was…"></textarea>
+2026-09-08T03:08:23.243Z pw:api   fill("Observed the action boundary, then verified the persisted result.")
+2026-09-08T03:08:23.246Z pw:api attempting fill action
+2026-09-08T03:08:23.248Z pw:api   waiting for element to be visible, enabled and editable
+2026-09-08T03:08:23.390Z pw:api <= locator.fill succeeded
+2026-09-08T03:08:23.392Z pw:api => locator.all started
+2026-09-08T03:08:23.429Z pw:api <= locator.all succeeded
+2026-09-08T03:08:23.431Z pw:api => locator.check started
+2026-09-08T03:08:23.434Z pw:api waiting for locator('.ls-rubric input').first()
+2026-09-08T03:08:23.518Z pw:api   locator resolved to <input type="checkbox"/>
+2026-09-08T03:08:23.707Z pw:api attempting click action
+2026-09-08T03:08:23.710Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:24.289Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:24.290Z pw:api   scrolling into view if needed
+2026-09-08T03:08:24.307Z pw:api   done scrolling
+2026-09-08T03:08:24.394Z pw:api   performing click action
+2026-09-08T03:08:24.506Z pw:api   click action done
+2026-09-08T03:08:24.507Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:24.508Z pw:api   navigations have finished
+2026-09-08T03:08:24.538Z pw:api <= locator.check succeeded
+2026-09-08T03:08:24.539Z pw:api => locator.check started
+2026-09-08T03:08:24.540Z pw:api waiting for locator('.ls-rubric input').nth(1)
+2026-09-08T03:08:24.574Z pw:api   locator resolved to <input type="checkbox"/>
+2026-09-08T03:08:24.629Z pw:api attempting click action
+2026-09-08T03:08:24.629Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:24.659Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:24.659Z pw:api   scrolling into view if needed
+2026-09-08T03:08:24.701Z pw:api   done scrolling
+2026-09-08T03:08:24.794Z pw:api   performing click action
+2026-09-08T03:08:24.972Z pw:api   click action done
+2026-09-08T03:08:24.972Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:24.973Z pw:api   navigations have finished
+2026-09-08T03:08:25.035Z pw:api <= locator.check succeeded
+2026-09-08T03:08:25.036Z pw:api => locator.check started
+2026-09-08T03:08:25.038Z pw:api waiting for locator('.ls-rubric input').nth(2)
+2026-09-08T03:08:25.074Z pw:api   locator resolved to <input type="checkbox"/>
+2026-09-08T03:08:25.172Z pw:api attempting click action
+2026-09-08T03:08:25.173Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:25.209Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:25.210Z pw:api   scrolling into view if needed
+2026-09-08T03:08:25.239Z pw:api   done scrolling
+2026-09-08T03:08:25.293Z pw:api   performing click action
+2026-09-08T03:08:25.354Z pw:api   click action done
+2026-09-08T03:08:25.354Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:25.354Z pw:api   navigations have finished
+2026-09-08T03:08:25.375Z pw:api <= locator.check succeeded
+2026-09-08T03:08:25.376Z pw:api => locator.isDisabled started
+2026-09-08T03:08:25.381Z pw:api waiting for getByRole('button', { name: 'Complete mission', exact: true })
+2026-09-08T03:08:25.488Z pw:api   locator resolved to <button disabled class="ls-button ls-button-primary">Complete
+mission</button>
+2026-09-08T03:08:25.489Z pw:api <= locator.isDisabled succeeded
+2026-09-08T03:08:25.490Z pw:api => locator.fill started
+2026-09-08T03:08:25.491Z pw:api waiting for getByLabel('Evidence of your work')
+2026-09-08T03:08:25.590Z pw:api   locator resolved to <textarea rows="4" maxlength="20000" class="ls-input
+ls-textarea" id="evidence-trace-a-request" aria-describedby="evidence-help" placeholder="Change: …↵Verification:
+…↵Evidence or reference: …"></textarea>
+2026-09-08T03:08:25.622Z pw:api   fill("Trace diagram + negative test output: verified actor and data flow.")
+2026-09-08T03:08:25.622Z pw:api attempting fill action
+2026-09-08T03:08:25.623Z pw:api   waiting for element to be visible, enabled and editable
+2026-09-08T03:08:25.705Z pw:api <= locator.fill succeeded
+2026-09-08T03:08:25.706Z pw:api => locator.click started
+2026-09-08T03:08:25.709Z pw:api waiting for getByRole('button', { name: 'Complete mission', exact: true })
+2026-09-08T03:08:25.772Z pw:api   locator resolved to <button class="ls-button ls-button-primary">Complete
+mission</button>
+2026-09-08T03:08:25.777Z pw:api attempting click action
+2026-09-08T03:08:25.779Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:25.808Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:25.808Z pw:api   scrolling into view if needed
+2026-09-08T03:08:25.840Z pw:api   done scrolling
+2026-09-08T03:08:25.971Z pw:api   performing click action
+2026-09-08T03:08:26.074Z pw:api   click action done
+2026-09-08T03:08:26.074Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:26.110Z pw:api   navigations have finished
+2026-09-08T03:08:26.113Z pw:api <= locator.click succeeded
+2026-09-08T03:08:26.116Z pw:api => page.evaluate started
+2026-09-08T03:08:26.177Z pw:api <= page.evaluate succeeded
+2026-09-08T03:08:26.180Z pw:api => page.reload started
+2026-09-08T03:08:26.183Z pw:api waiting for navigation until "domcontentloaded"
+2026-09-08T03:08:26.440Z pw:api   "commit" event fired
+2026-09-08T03:08:26.441Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:26.441Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:26.541Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:26.543Z pw:api <= page.reload succeeded
+2026-09-08T03:08:26.551Z pw:api => page.waitForFunction started
+2026-09-08T03:08:26.748Z pw:api   "load" event fired
+2026-09-08T03:08:26.847Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:27.030Z pw:api <= page.waitForFunction succeeded
+2026-09-08T03:08:27.033Z pw:api => locator.inputValue started
+2026-09-08T03:08:27.034Z pw:api waiting for getByLabel('Personal notes & checkpoint answers')
+2026-09-08T03:08:27.167Z pw:api   locator resolved to <textarea rows="7" maxlength="50000" id="notes-trace-a-request"
+class="ls-input ls-textarea" placeholder="I expected… I found… The tradeoff I made was…">Observed the action boundary,
+then verified the p…</textarea>
+2026-09-08T03:08:27.168Z pw:api <= locator.inputValue succeeded
+2026-09-08T03:08:27.170Z pw:api => locator.isDisabled started
+2026-09-08T03:08:27.172Z pw:api waiting for getByRole('button', { name: '✓ Completed', exact: true })
+2026-09-08T03:08:27.226Z pw:api   locator resolved to <button disabled class="ls-button ls-button-primary">✓
+Completed</button>
+2026-09-08T03:08:27.227Z pw:api <= locator.isDisabled succeeded
+PASS completion gating, notes, and reload persistence
+2026-09-08T03:08:27.230Z pw:api => locator.evaluateAll started
+2026-09-08T03:08:27.264Z pw:api <= locator.evaluateAll succeeded
+2026-09-08T03:08:27.267Z pw:api => locator.selectOption started
+2026-09-08T03:08:27.269Z pw:api waiting for locator('header.app-header select')
+2026-09-08T03:08:27.305Z pw:api   locator resolved to <select>…</select>
+2026-09-08T03:08:27.324Z pw:api attempting select option action
+2026-09-08T03:08:27.325Z pw:api   waiting for element to be visible and enabled
+2026-09-08T03:08:27.378Z pw:api   selected specified option(s)
+2026-09-08T03:08:27.381Z pw:api <= locator.selectOption succeeded
+2026-09-08T03:08:27.382Z pw:api => page.waitForFunction started
+2026-09-08T03:08:27.441Z pw:api <= page.waitForFunction succeeded
+2026-09-08T03:08:27.442Z pw:api => page.reload started
+2026-09-08T03:08:27.445Z pw:api waiting for navigation until "domcontentloaded"
+2026-09-08T03:08:27.541Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:29.123Z pw:api   "commit" event fired
+2026-09-08T03:08:29.123Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:29.124Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:29.169Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:29.173Z pw:api <= page.reload succeeded
+2026-09-08T03:08:29.174Z pw:api => page.waitForFunction started
+2026-09-08T03:08:29.207Z pw:api   "load" event fired
+2026-09-08T03:08:29.207Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:29.363Z pw:api <= page.waitForFunction succeeded
+2026-09-08T03:08:29.364Z pw:api => locator.inputValue started
+2026-09-08T03:08:29.365Z pw:api waiting for getByLabel('Personal notes & checkpoint answers')
+2026-09-08T03:08:29.542Z pw:api   locator resolved to <textarea rows="7" maxlength="50000" id="notes-trace-a-request"
+class="ls-input ls-textarea" placeholder="I expected… I found… The tradeoff I made was…">Observed the action boundary,
+then verified the p…</textarea>
+2026-09-08T03:08:29.543Z pw:api <= locator.inputValue succeeded
+2026-09-08T03:08:29.545Z pw:api => locator.inputValue started
+2026-09-08T03:08:29.549Z pw:api waiting for locator('header.app-header select')
+2026-09-08T03:08:29.574Z pw:api   locator resolved to <select>…</select>
+2026-09-08T03:08:29.575Z pw:api <= locator.inputValue succeeded
+PASS notebook survives demo role switch
+2026-09-08T03:08:29.578Z pw:api => locator.selectOption started
+2026-09-08T03:08:29.579Z pw:api waiting for getByLabel('Engineering stage', { exact: true })
+2026-09-08T03:08:29.625Z pw:api   locator resolved to <select class="ls-input" id="stage-filter">…</select>
+2026-09-08T03:08:29.640Z pw:api attempting select option action
+2026-09-08T03:08:29.640Z pw:api   waiting for element to be visible and enabled
+2026-09-08T03:08:29.689Z pw:api   selected specified option(s)
+2026-09-08T03:08:29.690Z pw:api <= locator.selectOption succeeded
+2026-09-08T03:08:29.691Z pw:api => locator.count started
+2026-09-08T03:08:29.795Z pw:api <= locator.count succeeded
+2026-09-08T03:08:29.796Z pw:api => locator.fill started
+2026-09-08T03:08:29.797Z pw:api waiting for getByLabel('Find a topic or code path')
+2026-09-08T03:08:29.822Z pw:api   "networkidle" event fired
+2026-09-08T03:08:30.004Z pw:api   locator resolved to <input value="" type="search" class="ls-input"
+id="mission-search" placeholder="Try permissions, testing…"/>
+2026-09-08T03:08:30.042Z pw:api   fill("no-such-learning-topic-90210")
+2026-09-08T03:08:30.043Z pw:api attempting fill action
+2026-09-08T03:08:30.043Z pw:api   waiting for element to be visible, enabled and editable
+2026-09-08T03:08:30.259Z pw:api <= locator.fill succeeded
+2026-09-08T03:08:30.260Z pw:api => locator.count started
+2026-09-08T03:08:30.269Z pw:api <= locator.count succeeded
+2026-09-08T03:08:30.270Z pw:api => locator.click started
+2026-09-08T03:08:30.271Z pw:api waiting for getByRole('button', { name: 'Clear filters' })
+2026-09-08T03:08:30.317Z pw:api   locator resolved to <button class="ls-text-link">Clear filters</button>
+2026-09-08T03:08:30.322Z pw:api attempting click action
+2026-09-08T03:08:30.322Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:30.363Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:30.363Z pw:api   scrolling into view if needed
+2026-09-08T03:08:30.366Z pw:api   done scrolling
+2026-09-08T03:08:30.379Z pw:api   performing click action
+2026-09-08T03:08:30.584Z pw:api   click action done
+2026-09-08T03:08:30.585Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:30.599Z pw:api   navigations have finished
+2026-09-08T03:08:30.600Z pw:api <= locator.click succeeded
+2026-09-08T03:08:30.601Z pw:api => locator.count started
+2026-09-08T03:08:30.610Z pw:api <= locator.count succeeded
+2026-09-08T03:08:30.620Z pw:api => locator.click started
+2026-09-08T03:08:30.622Z pw:api waiting for locator('.ls-checkpoints summary').first()
+2026-09-08T03:08:30.639Z pw:api   locator resolved to <summary>…</summary>
+2026-09-08T03:08:30.648Z pw:api attempting click action
+2026-09-08T03:08:30.648Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:30.682Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:30.682Z pw:api   scrolling into view if needed
+2026-09-08T03:08:30.686Z pw:api   done scrolling
+2026-09-08T03:08:30.703Z pw:api   performing click action
+2026-09-08T03:08:30.790Z pw:api   click action done
+2026-09-08T03:08:30.790Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:30.805Z pw:api   navigations have finished
+2026-09-08T03:08:30.807Z pw:api <= locator.click succeeded
+2026-09-08T03:08:30.819Z pw:api => locator.isVisible started
+2026-09-08T03:08:30.822Z pw:api   checking visibility of getByText('Model answer', { exact: true }).first()
+2026-09-08T03:08:30.856Z pw:api <= locator.isVisible succeeded
+PASS stage filters, search recovery, checkpoint disclosure
+2026-09-08T03:08:30.857Z pw:api => page.evaluate started
+2026-09-08T03:08:30.872Z pw:api <= page.evaluate succeeded
+2026-09-08T03:08:30.875Z pw:api => locator.setInputFiles started
+2026-09-08T03:08:30.879Z pw:api waiting for getByLabel('Choose JSON notebook backup')
+2026-09-08T03:08:30.891Z pw:api   locator resolved to <input type="file" class="ls-file-input"
+accept=".json,application/json" aria-label="Choose JSON notebook backup"/>
+2026-09-08T03:08:30.938Z pw:api <= locator.setInputFiles succeeded
+2026-09-08T03:08:30.938Z pw:api => locator.waitFor started
+2026-09-08T03:08:30.940Z pw:api waiting for getByText('Choose a valid JSON notebook backup.', { exact: true }) to be
+visible
+2026-09-08T03:08:31.017Z pw:api   locator resolved to visible <p role="status" class="ls-notice">Choose a valid JSON
+notebook backup.</p>
+2026-09-08T03:08:31.018Z pw:api <= locator.waitFor succeeded
+2026-09-08T03:08:31.019Z pw:api => page.evaluate started
+2026-09-08T03:08:31.028Z pw:api <= page.evaluate succeeded
+2026-09-08T03:08:31.035Z pw:api => locator.setInputFiles started
+2026-09-08T03:08:31.037Z pw:api waiting for getByLabel('Choose JSON notebook backup')
+2026-09-08T03:08:31.052Z pw:api   locator resolved to <input type="file" class="ls-file-input"
+accept=".json,application/json" aria-label="Choose JSON notebook backup"/>
+2026-09-08T03:08:31.077Z pw:api <= locator.setInputFiles succeeded
+2026-09-08T03:08:31.078Z pw:api => locator.waitFor started
+2026-09-08T03:08:31.088Z pw:api waiting for getByRole('button', { name: 'Replace notebook with backup' }) to be visible
+2026-09-08T03:08:31.186Z pw:api   locator resolved to visible <button class="ls-button ls-button-primary">Replace
+notebook with backup</button>
+2026-09-08T03:08:31.188Z pw:api <= locator.waitFor succeeded
+2026-09-08T03:08:31.189Z pw:api => locator.click started
+2026-09-08T03:08:31.190Z pw:api waiting for getByRole('button', { name: 'Cancel', exact: true })
+2026-09-08T03:08:31.229Z pw:api   locator resolved to <button class="ls-button ls-button-secondary">Cancel</button>
+2026-09-08T03:08:31.233Z pw:api attempting click action
+2026-09-08T03:08:31.234Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:31.253Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:31.253Z pw:api   scrolling into view if needed
+2026-09-08T03:08:31.275Z pw:api   done scrolling
+2026-09-08T03:08:31.289Z pw:api   performing click action
+2026-09-08T03:08:31.391Z pw:api   click action done
+2026-09-08T03:08:31.391Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:31.404Z pw:api   navigations have finished
+2026-09-08T03:08:31.406Z pw:api <= locator.click succeeded
+2026-09-08T03:08:31.407Z pw:api => page.evaluate started
+2026-09-08T03:08:31.418Z pw:api <= page.evaluate succeeded
+2026-09-08T03:08:31.419Z pw:api => locator.setInputFiles started
+2026-09-08T03:08:31.420Z pw:api waiting for getByLabel('Choose JSON notebook backup')
+2026-09-08T03:08:31.433Z pw:api   locator resolved to <input type="file" class="ls-file-input"
+accept=".json,application/json" aria-label="Choose JSON notebook backup"/>
+2026-09-08T03:08:31.460Z pw:api <= locator.setInputFiles succeeded
+2026-09-08T03:08:31.462Z pw:api => locator.click started
+2026-09-08T03:08:31.464Z pw:api waiting for getByRole('button', { name: 'Replace notebook with backup' })
+2026-09-08T03:08:31.554Z pw:api   locator resolved to <button class="ls-button ls-button-primary">Replace notebook
+with backup</button>
+2026-09-08T03:08:31.572Z pw:api attempting click action
+2026-09-08T03:08:31.572Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:31.595Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:31.596Z pw:api   scrolling into view if needed
+2026-09-08T03:08:31.599Z pw:api   done scrolling
+2026-09-08T03:08:31.606Z pw:api   performing click action
+2026-09-08T03:08:31.648Z pw:api   click action done
+2026-09-08T03:08:31.648Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:31.654Z pw:api   navigations have finished
+2026-09-08T03:08:31.655Z pw:api <= locator.click succeeded
+2026-09-08T03:08:31.656Z pw:api => page.evaluate started
+2026-09-08T03:08:31.673Z pw:api <= page.evaluate succeeded
+2026-09-08T03:08:31.681Z pw:api => locator.click started
+2026-09-08T03:08:31.684Z pw:api waiting for getByRole('button', { name: 'Export Markdown', exact: true })
+2026-09-08T03:08:31.724Z pw:api   locator resolved to <button class="ls-button ls-button-secondary">Export
+Markdown</button>
+2026-09-08T03:08:31.732Z pw:api attempting click action
+2026-09-08T03:08:31.732Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:31.746Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:31.746Z pw:api   scrolling into view if needed
+2026-09-08T03:08:31.749Z pw:api   done scrolling
+2026-09-08T03:08:31.757Z pw:api   performing click action
+2026-09-08T03:08:31.807Z pw:api <= page.waitForEvent succeeded
+2026-09-08T03:08:31.970Z pw:api   click action done
+2026-09-08T03:08:31.970Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:32.046Z pw:api   navigations have finished
+2026-09-08T03:08:32.051Z pw:api <= locator.click succeeded
+2026-09-08T03:08:32.682Z pw:api   "commit" event fired
+2026-09-08T03:08:32.723Z pw:api   "commit" event fired
+2026-09-08T03:08:32.724Z pw:api   navigated to "edge://downloads-hub/"
+2026-09-08T03:08:33.521Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:33.569Z pw:api   "load" event fired
+2026-09-08T03:08:34.188Z pw:api   "networkidle" event fired
+2026-09-08T03:08:34.596Z pw:api => locator.click started
+2026-09-08T03:08:34.597Z pw:api waiting for getByRole('button', { name: 'Back up JSON', exact: true })
+2026-09-08T03:08:34.668Z pw:api   locator resolved to <button class="ls-button ls-button-secondary">Back up
+JSON</button>
+2026-09-08T03:08:34.688Z pw:api attempting click action
+2026-09-08T03:08:34.689Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:34.756Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:34.756Z pw:api   scrolling into view if needed
+2026-09-08T03:08:34.766Z pw:api   done scrolling
+2026-09-08T03:08:34.813Z pw:api   performing click action
+2026-09-08T03:08:34.889Z pw:api <= page.waitForEvent succeeded
+2026-09-08T03:08:35.092Z pw:api   click action done
+2026-09-08T03:08:35.092Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:35.147Z pw:api   navigations have finished
+2026-09-08T03:08:35.148Z pw:api <= locator.click succeeded
+PASS invalid import preservation, import preview/cancel/replace, both exports
+2026-09-08T03:08:36.934Z pw:api => locator.uncheck started
+2026-09-08T03:08:36.938Z pw:api waiting for locator('.ls-rubric input').first()
+2026-09-08T03:08:37.003Z pw:api   locator resolved to <input type="checkbox"/>
+2026-09-08T03:08:37.035Z pw:api attempting click action
+2026-09-08T03:08:37.036Z pw:api   waiting for element to be visible, enabled and stable
+2026-09-08T03:08:37.051Z pw:api   element is visible, enabled and stable
+2026-09-08T03:08:37.052Z pw:api   scrolling into view if needed
+2026-09-08T03:08:37.054Z pw:api   done scrolling
+2026-09-08T03:08:37.084Z pw:api   performing click action
+2026-09-08T03:08:37.138Z pw:api   click action done
+2026-09-08T03:08:37.138Z pw:api   waiting for scheduled navigations to finish
+2026-09-08T03:08:37.138Z pw:api   navigations have finished
+2026-09-08T03:08:37.162Z pw:api <= locator.uncheck succeeded
+2026-09-08T03:08:37.163Z pw:api => page.evaluate started
+2026-09-08T03:08:37.173Z pw:api <= page.evaluate succeeded
+2026-09-08T03:08:37.175Z pw:api => page.evaluate started
+2026-09-08T03:08:37.187Z pw:api <= page.evaluate succeeded
+PASS removing a criterion reopens completed work
+2026-09-08T03:08:37.188Z pw:api => browserContext.newPage started
+2026-09-08T03:08:37.797Z pw:api <= browserContext.newPage succeeded
+2026-09-08T03:08:37.799Z pw:api => page.goto started
+2026-09-08T03:08:37.801Z pw:api navigating to "http://127.0.0.1:3100/learn?mission=trace-a-request", waiting until
+"domcontentloaded"
+2026-09-08T03:08:38.053Z pw:api   "commit" event fired
+2026-09-08T03:08:38.053Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:38.153Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:38.154Z pw:api <= page.goto succeeded
+2026-09-08T03:08:38.155Z pw:api => page.waitForFunction started
+2026-09-08T03:08:39.272Z pw:api   "load" event fired
+2026-09-08T03:08:39.785Z pw:api   "networkidle" event fired
+2026-09-08T03:08:40.331Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:40.358Z pw:api <= page.waitForFunction succeeded
+2026-09-08T03:08:40.361Z pw:api => page.bringToFront started
+2026-09-08T03:08:40.454Z pw:api <= page.bringToFront succeeded
+2026-09-08T03:08:40.455Z pw:api => page.waitForFunction started
+2026-09-08T03:08:40.487Z pw:api <= page.waitForFunction succeeded
+2026-09-08T03:08:40.489Z pw:api => locator.fill started
+2026-09-08T03:08:40.492Z pw:api waiting for getByLabel('Personal notes & checkpoint answers')
+2026-09-08T03:08:40.536Z pw:api   locator resolved to <textarea rows="7" maxlength="50000" id="notes-trace-a-request"
+class="ls-input ls-textarea" placeholder="I expected… I found… The tradeoff I made was…">Observed the action boundary,
+then verified the p…</textarea>
+2026-09-08T03:08:40.542Z pw:api   fill("Newer notes written by the first tab.")
+2026-09-08T03:08:40.543Z pw:api attempting fill action
+2026-09-08T03:08:40.543Z pw:api   waiting for element to be visible, enabled and editable
+2026-09-08T03:08:40.737Z pw:api <= locator.fill succeeded
+2026-09-08T03:08:40.738Z pw:api => page.bringToFront started
+2026-09-08T03:08:40.905Z pw:api <= page.bringToFront succeeded
+2026-09-08T03:08:40.914Z pw:api => locator.fill started
+2026-09-08T03:08:40.916Z pw:api waiting for getByLabel('Personal notes & checkpoint answers')
+2026-09-08T03:08:41.093Z pw:api   locator resolved to <textarea rows="7" maxlength="50000" id="notes-trace-a-request"
+class="ls-input ls-textarea" placeholder="I expected… I found… The tradeoff I made was…">Observed the action boundary,
+then verified the p…</textarea>
+2026-09-08T03:08:41.098Z pw:api   fill("Unsaved conflicting work in the second tab.")
+2026-09-08T03:08:41.098Z pw:api attempting fill action
+2026-09-08T03:08:41.099Z pw:api   waiting for element to be visible, enabled and editable
+2026-09-08T03:08:41.169Z pw:api <= locator.fill succeeded
+2026-09-08T03:08:41.170Z pw:api => page.evaluate started
+2026-09-08T03:08:43.618Z pw:api <= page.evaluate succeeded
+2026-09-08T03:08:43.619Z pw:api => locator.innerText started
+2026-09-08T03:08:43.630Z pw:api waiting for locator('.ls-notebook .ls-save-status')
+2026-09-08T03:08:43.646Z pw:api   locator resolved to <span role="status" class="ls-save-status ls-save-error">Another
+tab changed this notebook. Your edits are…</span>
+2026-09-08T03:08:43.648Z pw:api <= locator.innerText succeeded
+2026-09-08T03:08:43.649Z pw:api => locator.inputValue started
+2026-09-08T03:08:43.650Z pw:api waiting for getByLabel('Personal notes & checkpoint answers')
+2026-09-08T03:08:43.665Z pw:api   locator resolved to <textarea rows="7" maxlength="50000" id="notes-trace-a-request"
+class="ls-input ls-textarea" placeholder="I expected… I found… The tradeoff I made was…">Unsaved conflicting work in
+the second tab.</textarea>
+2026-09-08T03:08:43.666Z pw:api <= locator.inputValue succeeded
+2026-09-08T03:08:43.670Z pw:api => page.close started
+2026-09-08T03:08:43.763Z pw:api <= page.close succeeded
+PASS stale tab cannot overwrite another tab’s notebook
+2026-09-08T03:08:43.765Z pw:api => page.goto started
+2026-09-08T03:08:43.766Z pw:api navigating to "http://127.0.0.1:3100/learn/docs", waiting until "domcontentloaded"
+2026-09-08T03:08:44.157Z pw:api   "commit" event fired
+2026-09-08T03:08:44.158Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs"
+2026-09-08T03:08:44.548Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:44.549Z pw:api <= page.goto succeeded
+2026-09-08T03:08:44.550Z pw:api => locator.count started
+2026-09-08T03:08:44.551Z pw:api   "load" event fired
+2026-09-08T03:08:44.667Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs"
+2026-09-08T03:08:44.835Z pw:api <= locator.count succeeded
+2026-09-08T03:08:44.836Z pw:api => locator.evaluateAll started
+2026-09-08T03:08:45.075Z pw:api <= locator.evaluateAll succeeded
+2026-09-08T03:08:45.076Z pw:api => page.goto started
+2026-09-08T03:08:45.077Z pw:api navigating to "http://127.0.0.1:3100/learn/docs/roadmap", waiting until
+"domcontentloaded"
+2026-09-08T03:08:45.351Z pw:api   "commit" event fired
+2026-09-08T03:08:45.351Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/roadmap"
+2026-09-08T03:08:45.436Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:45.442Z pw:api <= page.goto succeeded
+2026-09-08T03:08:45.443Z pw:api => locator.innerText started
+2026-09-08T03:08:45.445Z pw:api waiting for locator('.reading-article')
+2026-09-08T03:08:45.607Z pw:api   "load" event fired
+2026-09-08T03:08:45.666Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/roadmap"
+2026-09-08T03:08:45.803Z pw:api   locator resolved to <article class="reading-article">…</article>
+2026-09-08T03:08:45.814Z pw:api <= locator.innerText succeeded
+2026-09-08T03:08:45.817Z pw:api => page.goto started
+2026-09-08T03:08:45.819Z pw:api navigating to "http://127.0.0.1:3100/learn/docs/codebase-tour", waiting until
+"domcontentloaded"
+2026-09-08T03:08:46.160Z pw:api   "commit" event fired
+2026-09-08T03:08:46.160Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/codebase-tour"
+2026-09-08T03:08:46.232Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:46.233Z pw:api <= page.goto succeeded
+2026-09-08T03:08:46.234Z pw:api => locator.innerText started
+2026-09-08T03:08:46.236Z pw:api waiting for locator('.reading-article')
+2026-09-08T03:08:46.360Z pw:api   "load" event fired
+2026-09-08T03:08:46.470Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/codebase-tour"
+2026-09-08T03:08:46.502Z pw:api   locator resolved to <article class="reading-article">…</article>
+2026-09-08T03:08:46.502Z pw:api <= locator.innerText succeeded
+2026-09-08T03:08:46.503Z pw:api => page.goto started
+2026-09-08T03:08:46.506Z pw:api navigating to "http://127.0.0.1:3100/learn/docs/engineering-notes", waiting until
+"domcontentloaded"
+2026-09-08T03:08:49.369Z pw:api   "commit" event fired
+2026-09-08T03:08:49.371Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/engineering-notes"
+2026-09-08T03:08:49.517Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:49.518Z pw:api <= page.goto succeeded
+2026-09-08T03:08:49.519Z pw:api => locator.innerText started
+2026-09-08T03:08:49.534Z pw:api waiting for locator('.reading-article')
+2026-09-08T03:08:49.550Z pw:api   "load" event fired
+2026-09-08T03:08:49.678Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/engineering-notes"
+2026-09-08T03:08:49.798Z pw:api   locator resolved to <article class="reading-article">…</article>
+2026-09-08T03:08:49.799Z pw:api <= locator.innerText succeeded
+2026-09-08T03:08:49.800Z pw:api => page.goto started
+2026-09-08T03:08:49.801Z pw:api navigating to "http://127.0.0.1:3100/learn/docs/practice-labs", waiting until
+"domcontentloaded"
+2026-09-08T03:08:50.139Z pw:api   "commit" event fired
+2026-09-08T03:08:50.140Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/practice-labs"
+2026-09-08T03:08:50.417Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:50.423Z pw:api   "load" event fired
+2026-09-08T03:08:50.424Z pw:api <= page.goto succeeded
+2026-09-08T03:08:50.424Z pw:api => locator.innerText started
+2026-09-08T03:08:50.426Z pw:api waiting for locator('.reading-article')
+2026-09-08T03:08:50.885Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/practice-labs"
+2026-09-08T03:08:51.034Z pw:api   locator resolved to <article class="reading-article">…</article>
+2026-09-08T03:08:51.035Z pw:api <= locator.innerText succeeded
+2026-09-08T03:08:51.036Z pw:api => page.goto started
+2026-09-08T03:08:51.043Z pw:api navigating to "http://127.0.0.1:3100/learn/docs/system-design", waiting until
+"domcontentloaded"
+2026-09-08T03:08:51.482Z pw:api   "commit" event fired
+2026-09-08T03:08:51.482Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/system-design"
+2026-09-08T03:08:51.972Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:51.975Z pw:api   "load" event fired
+2026-09-08T03:08:51.975Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/system-design"
+2026-09-08T03:08:51.976Z pw:api <= page.goto succeeded
+2026-09-08T03:08:51.978Z pw:api => locator.innerText started
+2026-09-08T03:08:51.980Z pw:api waiting for locator('.reading-article')
+2026-09-08T03:08:52.503Z pw:api   locator resolved to <article class="reading-article">…</article>
+2026-09-08T03:08:52.505Z pw:api <= locator.innerText succeeded
+2026-09-08T03:08:52.506Z pw:api => page.goto started
+2026-09-08T03:08:52.511Z pw:api navigating to "http://127.0.0.1:3100/learn/docs/operations-playbook", waiting until
+"domcontentloaded"
+2026-09-08T03:08:52.715Z pw:api   "commit" event fired
+2026-09-08T03:08:52.715Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/operations-playbook"
+2026-09-08T03:08:52.791Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:52.793Z pw:api <= page.goto succeeded
+2026-09-08T03:08:52.794Z pw:api => locator.innerText started
+2026-09-08T03:08:52.795Z pw:api waiting for locator('.reading-article')
+2026-09-08T03:08:52.923Z pw:api   "load" event fired
+2026-09-08T03:08:53.080Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/operations-playbook"
+2026-09-08T03:08:53.159Z pw:api   locator resolved to <article class="reading-article">…</article>
+2026-09-08T03:08:53.160Z pw:api <= locator.innerText succeeded
+2026-09-08T03:08:53.162Z pw:api => page.goto started
+2026-09-08T03:08:53.165Z pw:api navigating to "http://127.0.0.1:3100/learn/docs/career-evidence", waiting until
+"domcontentloaded"
+2026-09-08T03:08:53.427Z pw:api   "commit" event fired
+2026-09-08T03:08:53.428Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/career-evidence"
+2026-09-08T03:08:53.521Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:53.524Z pw:api <= page.goto succeeded
+2026-09-08T03:08:53.525Z pw:api => locator.innerText started
+2026-09-08T03:08:53.526Z pw:api waiting for locator('.reading-article')
+2026-09-08T03:08:53.564Z pw:api   "load" event fired
+2026-09-08T03:08:53.729Z pw:api   locator resolved to <article class="reading-article">…</article>
+2026-09-08T03:08:53.730Z pw:api <= locator.innerText succeeded
+2026-09-08T03:08:53.731Z pw:api => page.goto started
+2026-09-08T03:08:53.732Z pw:api navigating to "http://127.0.0.1:3100/learn/docs/templates", waiting until
+"domcontentloaded"
+2026-09-08T03:08:53.808Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/career-evidence"
+2026-09-08T03:08:54.134Z pw:api   "commit" event fired
+2026-09-08T03:08:54.134Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/templates"
+2026-09-08T03:08:54.240Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:54.242Z pw:api <= page.goto succeeded
+2026-09-08T03:08:54.242Z pw:api => locator.innerText started
+2026-09-08T03:08:54.243Z pw:api waiting for locator('.reading-article')
+2026-09-08T03:08:54.287Z pw:api   "load" event fired
+2026-09-08T03:08:54.287Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/templates"
+2026-09-08T03:08:54.433Z pw:api   locator resolved to <article class="reading-article">…</article>
+2026-09-08T03:08:54.439Z pw:api <= locator.innerText succeeded
+2026-09-08T03:08:54.441Z pw:api => page.goto started
+2026-09-08T03:08:54.444Z pw:api navigating to "http://127.0.0.1:3100/learn/source?path=src%2Fapp%2Factions.ts",
+waiting until "domcontentloaded"
+2026-09-08T03:08:55.151Z pw:api   "commit" event fired
+2026-09-08T03:08:55.151Z pw:api   navigated to "http://127.0.0.1:3100/learn/source?path=src%2Fapp%2Factions.ts"
+2026-09-08T03:08:55.893Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:55.895Z pw:api <= page.goto succeeded
+2026-09-08T03:08:55.896Z pw:api => locator.isVisible started
+2026-09-08T03:08:55.897Z pw:api   "load" event fired
+2026-09-08T03:08:55.899Z pw:api   checking visibility of locator('.reading-source')
+2026-09-08T03:08:55.967Z pw:api   "networkidle" event fired
+2026-09-08T03:08:56.200Z pw:api <= locator.isVisible succeeded
+2026-09-08T03:08:56.201Z pw:api => page.goto started
+2026-09-08T03:08:56.203Z pw:api navigating to "http://127.0.0.1:3100/learn/source?path=..%2Fpackage.json", waiting
+until "domcontentloaded"
+2026-09-08T03:08:56.214Z pw:api   navigated to "http://127.0.0.1:3100/learn/source?path=src%2Fapp%2Factions.ts"
+2026-09-08T03:08:56.449Z pw:api   "commit" event fired
+2026-09-08T03:08:56.449Z pw:api   navigated to "http://127.0.0.1:3100/learn/source?path=..%2Fpackage.json"
+2026-09-08T03:08:56.555Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:56.556Z pw:api <= page.goto succeeded
+2026-09-08T03:08:56.557Z pw:api => page.goto started
+2026-09-08T03:08:56.558Z pw:api navigating to "http://127.0.0.1:3100/learn/docs/not-a-guide", waiting until
+"domcontentloaded"
+2026-09-08T03:08:56.699Z pw:api   navigated to "http://127.0.0.1:3100/learn/source?path=..%2Fpackage.json"
+2026-09-08T03:08:56.706Z pw:api   "load" event fired
+2026-09-08T03:08:56.999Z pw:api   "commit" event fired
+2026-09-08T03:08:57.000Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/not-a-guide"
+2026-09-08T03:08:57.172Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:57.173Z pw:api   navigated to "http://127.0.0.1:3100/learn/docs/not-a-guide"
+2026-09-08T03:08:57.176Z pw:api   "load" event fired
+2026-09-08T03:08:57.178Z pw:api <= page.goto succeeded
+PASS every handbook guide, source reader, and unknown-path 404s
+2026-09-08T03:08:57.179Z pw:api => page.goto started
+2026-09-08T03:08:57.181Z pw:api navigating to "http://127.0.0.1:3100/learn?mission=trace-a-request", waiting until
+"domcontentloaded"
+2026-09-08T03:08:57.463Z pw:api   "commit" event fired
+2026-09-08T03:08:57.464Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:57.552Z pw:api   "domcontentloaded" event fired
+2026-09-08T03:08:57.554Z pw:api <= page.goto succeeded
+2026-09-08T03:08:57.555Z pw:api => locator.waitFor started
+2026-09-08T03:08:57.556Z pw:api waiting for getByLabel('Personal notes & checkpoint answers') to be visible
+2026-09-08T03:08:57.808Z pw:api   "load" event fired
+2026-09-08T03:08:57.912Z pw:api   navigated to "http://127.0.0.1:3100/learn?mission=trace-a-request"
+2026-09-08T03:08:58.030Z pw:api   locator resolved to visible <textarea rows="7" disabled maxlength="50000"
+id="notes-trace-a-request" class="ls-input ls-textarea" placeholder="I expected… I found… The tradeoff I made
+was…"></textarea>
+2026-09-08T03:08:58.032Z pw:api <= locator.waitFor succeeded
+2026-09-08T03:08:58.033Z pw:api => page.waitForFunction started
+2026-09-08T03:08:58.297Z pw:api <= page.waitForFunction succeeded
+2026-09-08T03:08:58.300Z pw:api => page.screenshot started
+2026-09-08T03:08:58.302Z pw:api taking page screenshot
+2026-09-08T03:08:58.321Z pw:api waiting for fonts to load...
+2026-09-08T03:08:58.342Z pw:api fonts loaded
+2026-09-08T03:08:58.815Z pw:api   "networkidle" event fired
+2026-09-08T03:08:58.852Z pw:api <= page.screenshot succeeded
+2026-09-08T03:08:58.963Z pw:api => page.setViewportSize started
+2026-09-08T03:08:59.131Z pw:api <= page.setViewportSize succeeded
+2026-09-08T03:08:59.132Z pw:api => page.screenshot started
+2026-09-08T03:08:59.133Z pw:api taking page screenshot
+2026-09-08T03:08:59.264Z pw:api waiting for fonts to load...
+2026-09-08T03:08:59.449Z pw:api fonts loaded
+2026-09-08T03:09:00.763Z pw:api <= page.screenshot succeeded
+2026-09-08T03:09:00.889Z pw:api => page.evaluate started
+2026-09-08T03:09:00.894Z pw:api <= page.evaluate succeeded
+PASS desktop/mobile rendering without browser errors
+2026-09-08T03:09:00.895Z pw:api => browser.close started
+2026-09-08T03:11:46.683Z pw:api <= browser.close succeeded

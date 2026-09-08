@@ -1,0 +1,47 @@
+node : prisma:engines binaries to download libquery-engine, schema-engine +27542ms
+At line:2 char:134
++ ... RACE = '1'; node node_modules/prisma/build/index.js db push --skip-ge ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (prisma:engines ...engine +27542ms:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+prisma:getSchema prismaConfig {
+  "packagePath": "C:\\Users\\E\\Desktop\\astralearn3\\3buildagentteachgem\\package.json"
+} +45305ms
+prisma:getSchema Checking existence of C:\Users\E\Desktop\astralearn3\3buildagentteachgem\schema.prisma +12ms
+prisma:getSchema Reading schema from single file C:\Users\E\Desktop\astralearn3\3buildagentteachgem\schema.prisma +2ms
+prisma:getSchema Checking existence of C:\Users\E\Desktop\astralearn3\3buildagentteachgem\prisma\schema.prisma +53ms
+prisma:getSchema Reading schema from single file
+C:\Users\E\Desktop\astralearn3\3buildagentteachgem\prisma\schema.prisma +1ms
+prisma:getSchema Reading schema from multiple files C:\Users\E\Desktop\astralearn3\3buildagentteachgem\prisma\schema
++409ms
+prisma:loadEnv project root found at C:\Users\E\Desktop\astralearn3\3buildagentteachgem\package.json +140ms
+prisma:getSchema prismaConfig {
+  "packagePath": "C:\\Users\\E\\Desktop\\astralearn3\\3buildagentteachgem\\package.json"
+} +546ms
+prisma:tryLoadEnv Environment variables not found at null +1ms
+prisma:tryLoadEnv Environment variables not found at undefined +1ms
+prisma:tryLoadEnv No Environment variables loaded +0ms
+prisma:getConfig Using getConfig Wasm +13ms
+prisma:getConfig config data retrieved without errors in getConfig Wasm +697ms
+prisma:loadEnv project root found at C:\Users\E\Desktop\astralearn3\3buildagentteachgem\package.json +4ms
+prisma:getSchema prismaConfig {
+  "packagePath": "C:\\Users\\E\\Desktop\\astralearn3\\3buildagentteachgem\\package.json"
+} +5ms
+prisma:tryLoadEnv Environment variables not found at null +12ms
+prisma:tryLoadEnv Environment variables not found at undefined +1ms
+prisma:tryLoadEnv No Environment variables loaded +1ms
+prisma:getSchema Reading schema from single file
+C:\Users\E\Desktop\astralearn3\3buildagentteachgem\prisma\schema.prisma +1ms
+Prisma schema loaded from prisma\schema.prisma
+prisma:getSchema Reading schema from single file
+C:\Users\E\Desktop\astralearn3\3buildagentteachgem\prisma\schema.prisma +248ms
+prisma:getConfig Using getConfig Wasm +230ms
+prisma:getConfig config data retrieved without errors in getConfig Wasm +19ms
+Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+prisma:getSchema Reading schema from single file
+C:\Users\E\Desktop\astralearn3\3buildagentteachgem\prisma\schema.prisma +3ms
+prisma:getConfig Using getConfig Wasm +309ms
+prisma:getConfig config data retrieved without errors in getConfig Wasm +103ms
+
+Error: Schema engine error:

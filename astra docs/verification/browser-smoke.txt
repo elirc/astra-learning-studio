@@ -1,0 +1,8 @@
+PASS completion gating, notes, and reload persistence
+PASS notebook survives demo role switch
+PASS stage filters, search recovery, checkpoint disclosure
+PASS invalid import preservation, import preview/cancel/replace, both exports
+PASS removing a criterion reopens completed work
+PASS stale tab cannot overwrite another tab’s notebook
+PASS every handbook guide, source reader, and unknown-path 404s
+PASS desktop/mobile rendering without browser errors

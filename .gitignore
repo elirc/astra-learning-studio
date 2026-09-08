@@ -40,6 +40,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# Local preview processes; keep archived verification reports and screenshots.
+/astra docs/verification/*server*.log
+
 # Editor / OS
 .vscode/
 .idea/

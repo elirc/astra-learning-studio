@@ -1,0 +1,53 @@
+
+> agentic-edu-ops@1.0.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Experiments (use with caution):
+    · cpus
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/20) ...
+   Generating static pages (5/20)
+   Generating static pages (10/20)
+   Generating static pages (15/20)
+ ✓ Generating static pages (20/20)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ƒ /                                    149 B          87.4 kB
+├ ƒ /_not-found                          873 B          88.2 kB
+├ ƒ /agent-runs                          215 B          96.2 kB
+├ ƒ /agent-runs/[id]                     215 B          96.2 kB
+├ ƒ /audits                              149 B          87.4 kB
+├ ƒ /courses                             149 B          87.4 kB
+├ ƒ /digests                             215 B          96.2 kB
+├ ƒ /digests/[id]                        215 B          96.2 kB
+├ ƒ /interventions                       215 B          96.2 kB
+├ ƒ /jobs                                149 B          87.4 kB
+├ ƒ /lab                                 215 B          96.2 kB
+├ ƒ /learn                               33.4 kB         129 kB
+├ ƒ /learn/docs                          197 B          96.2 kB
+├ ƒ /learn/docs/[slug]                   197 B          96.2 kB
+├ ƒ /learn/source                        197 B          96.2 kB
+├ ƒ /logs                                215 B          96.2 kB
+├ ƒ /notifications                       215 B          96.2 kB
+├ ƒ /permissions                         215 B          96.2 kB
+├ ƒ /sections                            215 B          96.2 kB
+├ ƒ /sections/[id]                       215 B          96.2 kB
+├ ƒ /sections/[id]/gradebook             215 B          96.2 kB
+├ ƒ /students                            215 B          96.2 kB
+├ ƒ /students/[id]                       215 B          96.2 kB
+├ ƒ /teachers                            215 B          96.2 kB
+└ ƒ /teachers/[id]                       215 B          96.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-594cb9270e4fb773.js       31.7 kB
+  ├ chunks/fd9d1056-7a37ff1969624823.js  53.6 kB
+  └ other shared chunks (total)          1.91 kB
+
+
+ƒ  (Dynamic)  server-rendered on demand

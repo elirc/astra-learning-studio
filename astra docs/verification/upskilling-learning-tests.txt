@@ -1,0 +1,42 @@
+▶ learning guide links and source access
+  ✔ reads every cataloged source through the bounded source helper (220.6838ms)
+  ✔ source helper refuses unknown and traversal paths before reading (1.2872ms)
+  ✔ every cataloged source is a unique existing relative file (9.4059ms)
+  ✔ every link in the published handbook resolves to an existing route or source (15.4877ms)
+  ✔ resolves guide index, known slugs, configuration files, and source anchors (0.8982ms)
+  ✔ refuses unknown files and guides, traversal, unsafe URLs, and duplicate parameters (2.3358ms)
+✔ learning guide links and source access (259.5208ms)
+▶ curriculum integrity
+  ✔ every stage has substantial missions and prerequisites point backward (10.0564ms)
+  ✔ source references and handbook links resolve to real material (36.1356ms)
+  ✔ document lookup rejects traversal and unknown slugs (49.2361ms)
+✔ curriculum integrity (103.0112ms)
+▶ learner evidence and progression
+  ✔ completion requires both evidence and every rubric criterion (1.9218ms)
+  ✔ new learner gets the first mission; completed work advances the suggestion (3.492ms)
+  ✔ in-progress work with unmet prerequisites is not the recommended next mission (1.3146ms)
+  ✔ all completed missions have no further recommendation (1.4361ms)
+✔ learner evidence and progression (10.3086ms)
+▶ notebook persistence and recovery
+  ✔ existing version-1 notebooks retain evidence and gain empty retrieval fields (5.775ms)
+  ✔ checkpoint attempts and review date survive backup and Markdown export (2.1516ms)
+  ✔ invalid retrieval records cannot replace existing notes (9.3835ms)
+  ✔ valid backup preserves notes, evidence, and completion (1.5339ms)
+  ✔ bad local data cannot crash the studio; invalid imports fail explicitly (2.2839ms)
+  ✔ rejects invalid rubric indexes, unsupported IDs, and false completion claims (8.8788ms)
+  ✔ deduplicates rubric checks and keeps fresh mission defaults independent (6.1693ms)
+  ✔ a full notebook with multibyte notes can round-trip through its JSON backup (111.5144ms)
+✔ notebook persistence and recovery (150.226ms)
+▶ retrieval practice reminders
+  ✔ a completed mission becomes due at exactly seven days (2.056ms)
+  ✔ retrieval practice postpones the reminder; reopened work is excluded (1.0051ms)
+  ✔ oldest practice is first and a previous review cannot predate renewed completion (1.5361ms)
+✔ retrieval practice reminders (5.4901ms)
+ℹ tests 24
+ℹ suites 5
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3557.709

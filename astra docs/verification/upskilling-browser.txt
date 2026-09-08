@@ -1,0 +1,14 @@
+﻿
+PASS home redirects to Beginner learning with accessible starting guides
+PASS legacy backup imports notes with compatible defaults for new fields
+PASS second-answer-first persistence, dense arrays, and deliberate explanation disclosure
+PASS completion gating, notes, and reload persistence
+PASS notebook survives demo role switch
+PASS stage filters, search recovery, checkpoint disclosure
+PASS invalid import preservation, import preview/cancel/replace, notes and answers in both exports
+PASS seven-day review queue, answer gating, retrieval date persistence, and due-item removal
+PASS removing a criterion reopens completed work
+PASS stale tab cannot overwrite another tab’s notebook
+PASS every handbook guide, source reader, and unknown-path 404s
+PASS practice lab remains available at /lab
+PASS desktop/mobile rendering without browser errors
