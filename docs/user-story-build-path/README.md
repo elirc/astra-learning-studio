@@ -1,6 +1,23 @@
 # User Story Build Path
 
-Welcome to your first sprint. This suite contains a progressive set of 10 user stories—real features that a user of the Agentic Education Operations platform would actually want. 
+Welcome to your first sprint. This suite contains a progressive set of 10 user stories—real features that a user of the Agentic Education Operations platform would actually want.
+
+> **Verified against the code, 2026-10-06 — read before starting a story.**
+> Three stories describe a schema that doesn't exist (full table in
+> `fabledocs/02-codebase-gotchas.md` §F):
+>
+> - **Story 5** references `Enrollment.absences` — no such field; count
+>   absences from the `Attendance` table.
+> - **Story 7** references `InterventionPlan.advisorId` — the model has
+>   `createdById`; it's the *Student* that has `advisorId`.
+> - **Story 3** asks whether `NoteVisibility` is an enum — it never is:
+>   this schema has zero Prisma enums; every status is a `String`.
+>
+> Rule of thumb: when a story and `prisma/schema.prisma` disagree, the
+> schema wins — grep before you build. Also note `fabledocs/03-user-stories.md`
+> holds 19 further stories that are **already built** (see
+> `fabledocs/04-what-changed.md`); don't pick one of those expecting
+> greenfield work.
 
 ## How to Use These Stories
 You are no longer reading or tracing code. You are writing it. 

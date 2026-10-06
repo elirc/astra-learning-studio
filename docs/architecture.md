@@ -111,7 +111,7 @@ To maximize the educational impact of this project, developers are encouraged to
 ### 🧩 Lab 3: Implement an IP-Fingerprint Lock (RBAC Extension)
 * **Goal**: Require Multi-Factor or Actor validation for closing counseling plans.
 * **Task**:
-  1. Modify `src/app/actions.ts` inside `completePlanAction`.
+  1. Modify `completePlanAction` — note it is an inline server action defined in `src/app/interventions/page.tsx` (line ~16), not in an `actions.ts` file.
   2. Query the actor's profile and enforce that only the **assigned advisor** of the student, or an **Admin**, has permission to close the counseling case, returning a custom error message to the UI if rejected.
 
 ### 🧩 Lab 4: Program a custom Log Aggregator Widget

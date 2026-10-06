@@ -1,9 +1,14 @@
 # Architectural Cartographer Suite
 
-Welcome to the Architectural Cartographer Suite for the Agentic Education Operations platform. This suite is designed to be your primary technical onboarding manual, written from the perspective of a senior engineer mentoring a developer they genuinely want to see succeed. 
+Welcome to the Architectural Cartographer Suite for the Agentic Education Operations platform. This suite is a technical onboarding manual that progressively drills down from high-level mental models into folder structures, data flows, routing mechanics, type contracts, and advanced feature architectures.
 
-## Purpose
-The goal is not to list facts. The goal is to teach you *how this system thinks*. We will progressively drill down from high-level mental models into folder structures, data flows, routing mechanics, type contracts, and advanced feature architectures. 
+> **Accuracy note (verified 2026-10-06):** this suite predates the 19
+> fabledocs stories and the Learning Studio build. Where it disagrees with
+> the code, the code wins — the confirmed mismatches are listed in
+> `fabledocs/02-codebase-gotchas.md` §F ("Documentation drift"). Two to
+> watch here: `src/packages/ui` does not exist (the packages are `agents`,
+> `db`, `domain`, `learning`, `observability`, `shared`), and this schema
+> contains no Prisma enums.
 
 ## How to Use This Suite
 This suite is designed to be read sequentially, mapping to your growing familiarity with the codebase. Do not skip around until you have completed the linear progression.

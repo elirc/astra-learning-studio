@@ -2,6 +2,12 @@
 
 Welcome to the Mission Learning Path. This suite is not documentation to be read passively; it is an active training campaign. You are not reading—you are executing missions to build your muscle memory and intuition within this specific codebase.
 
+> **Accuracy note (verified 2026-10-06):** this suite predates the 19
+> fabledocs stories and the Learning Studio build, so line numbers and a
+> few schema claims have drifted. When a mission and the code disagree, the
+> code wins; the confirmed mismatches are listed in
+> `fabledocs/02-codebase-gotchas.md` §F.
+
 ## How to Use This Suite
 Each mission forces you to trace code, answer questions, review logic, debug issues, or explain patterns. 
 
